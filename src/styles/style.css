@@ -15,6 +15,7 @@
   --white-semitransparent: #d7ccc0;
   --light: #f5f4f0;
   --main: #fe8a02;
+  --main-hover: #ea7600;
   --main-dark: #42413c;
   --dark: #2a2626;
   --dark-semitransparent: #908d8b;
@@ -56,6 +57,20 @@ h3 {
   color: var(--main);
 }
 
+.button {
+  background-color: var(--main);
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  padding: 12px 24px;
+}
+
+.button:hover {
+  background-color: var(--main-hover);
+}
+
 .background-pattern::before {
   content: "";
   background-image: url("../assets/images/background.png");
@@ -70,14 +85,18 @@ h3 {
   opacity: 0.1;
 }
 
-section.content {
-  max-width: 1110px;
-  width: 100%;
+section {
   padding-top: 100px;
   padding-bottom: 100px;
-  margin: 0 auto;
 
   text-align: center;
+}
+
+div.content {
+  max-width: 1110px;
+  width: 100%;
+
+  margin: 0 auto;
 }
 
 /* HEADER */
@@ -119,18 +138,14 @@ header .content {
 }
 
 .header-button {
-  display: inline-block;
-  background-color: var(--main);
-  padding: 12px 24px;
   margin-top: 40px;
-
-  color: #fff;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-weight: bold;
 }
 
 /* SECTION 1 */
+
+.section-1 {
+  padding-bottom: 0;
+}
 
 .section-1 h2,
 .section-1 p {
@@ -139,4 +154,61 @@ header .content {
 
 .video {
   filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
+}
+
+/* SECTION 2 */
+.section-2 {
+  background-color: var(--main-dark);
+
+  margin-top: -100px;
+  padding-top: 200px;
+}
+
+.section-2 .cards-wrapper {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 20px 30px;
+}
+
+.section-2 h2 {
+  flex-basis: 350px;
+  margin: 0;
+
+  color: var(--white);
+  font-size: 52px;
+}
+
+.section-2 a {
+  flex-basis: 350px;
+
+  background-color: var(--light);
+
+  text-decoration: none;
+}
+
+.section-2 .card {
+  padding: 24px;
+
+  text-align: left;
+}
+
+.section-2 .card .card-number {
+  margin-top: 0;
+  margin-bottom: 40px;
+
+  font-family: Neucha, sans-serif;
+  color: var(--main-dark);
+  font-size: 64px;
+  line-height: 1;
+}
+
+.section-2 .card h3 {
+  color: var(--main);
+}
+
+.section-2 .card p {
+  margin: 0;
+  
+  color: var(--main-dark);
 }

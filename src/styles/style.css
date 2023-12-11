@@ -80,6 +80,8 @@ section.content {
   text-align: center;
 }
 
+/* HEADER */
+
 header {
   background-color: var(--light);
 }
@@ -126,4 +128,15 @@ header .content {
   text-transform: uppercase;
   text-decoration: none;
   font-weight: bold;
+}
+
+/* SECTION 1 */
+
+.section-1 h2,
+.section-1 p {
+  margin-bottom: 30px;
+}
+
+.video {
+  filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
 }
